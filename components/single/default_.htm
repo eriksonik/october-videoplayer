@@ -1,0 +1,10 @@
+<div class="video-wrapper">
+  <div class="video-container video-ratio-{{ __SELF__.ratio }}">
+    {% if __SELF__.player == 'vimeo' %}
+    <iframe src="https://player.vimeo.com/video/{{ __SELF__.vid }}{{ __SELF__.params }}" width="854" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% elseif __SELF__.player == 'youtube' %}
+    <iframe src="https://www.youtube.com/embed/{{ __SELF__.vid }}" width="854" height="480" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    {% endif %}
+  </div>
+  {% if __SELF__.title %}<div class="video-title">{{ __SELF__.title }}</div>{% endif %}
+</div>

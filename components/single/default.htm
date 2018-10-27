@@ -1,0 +1,6 @@
+<div class="video-wrapper">
+  <div class="video-container video-ratio-{{ __SELF__.ratio }}">
+    {% partial __SELF__ ~ '::' ~ __SELF__.player %}
+  </div>
+  {% if __SELF__.title %}<div class="video-title">{{ __SELF__.title }}</div>{% endif %}
+</div>

@@ -1,0 +1,22 @@
+.video-wrapper {
+  /*width: 600px;*/
+  /*max-width: 100%;*/
+  width: 100%;
+}
+.video-container {
+  position: relative;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container.video-ratio-4-3 {padding-bottom: 75%;}
+.video-container.video-ratio-16-9 {padding-bottom: 56.25%;}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
